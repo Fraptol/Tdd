@@ -13,8 +13,13 @@ public class Koszonto {
         } else if (length>0) {
             //String[] nametext=new String[]{names.split(" ")};
             String text="";
-            for (int i = 0; i < names.length; i++)
-            {text= text+names[i];}
+            for (int i = 0; i < names.length; i++) {
+                if (!(i<names.length-1)) {
+                    text = text + ", " + names[i];
+                } else {
+                    text = text + ", and " + names[i];
+                }
+            }
             System.out.println("Hello, " + text + ".");
             return "Hello, " + names + ".";
         }
