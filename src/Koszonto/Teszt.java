@@ -5,8 +5,10 @@ public class Teszt {
 
     String nameless ="";
     String reply0 ="Hello, my friend.";
-    String names1 = new String ("Bob");
-    String reply1 = new String("Hello, Bob.");
+    String names1 = "Bob";
+    String reply1 = "Hello, Bob.";
+
+
 
     public void shouldReplyCorrectly0(String nameless) {
         assertEquals(reply0, new Koszonto().Reply(nameless));

@@ -8,9 +8,9 @@ public class Koszonto {
             System.out.println("Hello, my friend.");
             return "Hello, my friend.";
         } else if (name.matches("Bob")) {
-            System.out.println("Hello, " + "Bob" + ".");
-            return "Hello, " + "Bob" + ".";
+            System.out.println("Hello, " + name + ".");
+            return "Hello, " + name + ".";
         }
-        return "Failure";
+        return "I failed.";
     }
 }
