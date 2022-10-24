@@ -11,7 +11,7 @@ public class Teszt {
     public void shouldReplyCorrectly0(String nameless) {
         assertEquals(reply0, new Koszonto().Reply(nameless));
     }
-    public void shouldReplyCorrectly1(String names) {
+    public void shouldReplyCorrectly1(String names1) {
         assertEquals(reply1, new Koszonto().Reply(names1));
     }
 }
