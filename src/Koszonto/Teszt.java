@@ -19,5 +19,5 @@ public class Teszt {
     String[] names2 = new String[] {"Alice", "Bob", "Jerry"};
     String reply2 = new String("Hello, Alice, Bob, and Jerry.");
 
-    
+
     }

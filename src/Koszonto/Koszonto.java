@@ -26,7 +26,7 @@ public class Koszonto {
                 for(int j =0; i< lil.length; j++){
                     namesSplit.add(lil[j]);
                 }
-            }                                                       //did it have to be this hard
+            }                                                       //did it have to be this hard, also now its in Arraylist, so i need to google again, but thank god its not me writing functional code tho.
 
             for (int i = 0; i < names.length; i++) {
                 if (!(i<names.length-1)) {
