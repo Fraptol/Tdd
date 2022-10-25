@@ -19,14 +19,23 @@ public class Koszonto {
 
         } else {
             String text="";
+            String TEXT="";
             ArrayList<String> namesSplit = new ArrayList<String>();
+            ArrayList<String> NAMESSplit = new ArrayList<String>();
             //String[] namesSplit=new String[]{names.split(", ")};  //java amirite
             for (int i = 0; i < names.length; i++) {
                 String[] lil=names[i].split(", ");
 
                 //namesSplit.add(names[i].split(", "));             //java amirite
-                for(int j =0; j< lil.length; j++){
-                    namesSplit.add(lil[j]);
+                for(int j =0; j< lil.length; j++) {
+
+                    boolean Uppercase=false;
+
+                    Uppercase=lil[j].matches(lil[j].toUpperCase());
+                    if(Uppercase)
+                    {NAMESSplit.add(lil[j]);}
+                    else
+                    {namesSplit.add(lil[j]);}
                 }
             }                                                       //did it have to be this hard,
 
@@ -65,11 +74,19 @@ public class Koszonto {
                     text = text + ", and " + namesSplit.get(i);
                 }
             }
-
+            length = NAMESSplit.size();
+            String[] SPLIT = new String[length];
+            for (int i = 0; i < NAMESSplit.size(); i++) {//how the hell is this always false
+                if (!(i<NAMESSplit.size()-1)) {
+                    TEXT = TEXT + ", " + NAMESSplit.get(i);
+                } else {
+                    TEXT = TEXT + ", AND " + NAMESSplit.get(i);
+                }
+            }
 
             //out
             System.out.println("Hello, " + text + ".");
-            return "Hello, " + names + ".";
+            return "Hello, " + text + ".";
         }
     }
 }
