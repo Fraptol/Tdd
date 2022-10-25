@@ -30,4 +30,18 @@ public class Teszt {
         assertEquals(reply3, new Koszonto().Reply(new String[] {names3}));
     }
 
+    String[] names4 = new String[] {"BARRY"};
+    String reply4 = new String("HELLO BARRY!");
+
+    public void shouldReplyCorrectly4(String names4) {
+        assertEquals(reply4, new Koszonto().Reply(new String[] {names4}));
+    }
+/*
+    String[] names5 = new String[] {"JAY","Maya","Alice","BOB","Charlotte"};
+    String reply5 = new String("Hello, Maya, Alice, and Charlotte. AND HELLO JAY AND BOB!");
+
+    public void shouldReplyCorrectly5(String names5) {
+        assertEquals(reply5, new Koszonto().Reply(new String[] {names5}));
+    }*/
+
     }

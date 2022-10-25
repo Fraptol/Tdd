@@ -38,12 +38,12 @@ public class Koszonto {
 
             // im doing this first because i didn't want to rewrite it later,
             // so i just made it with relatively fresh memory of how the reworked part works.
-            // i feel like a lazy * a bit, not following order of duty, but...
+            // i feel like a lazy * a bit, not following order of duty when that's the actual point, but...
             // for one, got into the flow of it, but also
             // i just want it done and this seemed best to understand (for me) in bulk. if not else im rewriting it
             // with more ordered writing timings next year :(
             // or this week if it means anything.
-            // btw im basicly relearning java, i havent programmed in a while, (and i thought i remember)
+            // btw im basically relearning java, i haven't programmed in a while, (and i thought i remember)
             // ... you know how sitting hours in front of a vibrating lamp is not really good for one's psiche,
             // well, i really have wanted to give up on programming, BUT for now im using it outside of this anyway,
             // so i could say, it doesn't seem that bad... well it is, it is bad,
@@ -52,6 +52,7 @@ public class Koszonto {
 
             // i just needed to write this out because otherwise it would be harder
             // to admit fault, and find my wrongs without.
+
 
 
 
