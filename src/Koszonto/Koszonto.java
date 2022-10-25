@@ -1,14 +1,11 @@
-
 package Koszonto;
 
-import java.net.ConnectException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
-//0.3
+//1.0
 public class Koszonto {
     public static void main(String[] args)
-    {}
+    {/*?*/}
     public String Reply(String[] names) {
         int length= names.length;
         if (length == 0) {
@@ -36,23 +33,7 @@ public class Koszonto {
                     else
                     {namesSplit.add(lilBites[j]);}
                 }
-            }                                                       //did it have to be this hard,
-
-
-            //                              ~~ nonsense thoughts of the writer ~~
-                                                       //please ignore
-
-            // ... you know how sitting hours in front of a vibrating lamp is not really good for one's psiche,
-            // well, i really have wanted to give up on programming, BUT for NOW i'm using it outside of this anyway,
-            // so i could say, it doesn't seem that bad, destructive... well it is, it is bad,
-            // and i SHOULD limit my recreational hours in front of the screen,
-            // because it gets me falling apart when working on these machines.
-
-            // i just needed to write this out because otherwise it would be harder
-            // to admit fault, and find my wrongs without.
-
-
-
+            }
 //concat
             length = namesSplit.size();
             String[] split = new String[length];

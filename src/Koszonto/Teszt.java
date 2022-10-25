@@ -1,4 +1,5 @@
 package Koszonto;
+
 import static org.junit.Assert.assertEquals;
 
 public class Teszt {
@@ -13,6 +14,8 @@ public class Teszt {
     String reply3 = new String("Hello, Jerry, Alice and Bob.");
     String[] names4 = new String[] {"BARRY"};
     String reply4 = new String("HELLO BARRY!");
+    String[] names5 = new String[] {"JAY","Maya","Alice","BOB","Charlotte"};
+    String reply5 = new String("Hello, Maya, Alice, and Charlotte. AND HELLO JAY AND BOB!");
 
 //empty
     public void shouldReplyCorrectly0(String nameless) {
@@ -34,13 +37,8 @@ public class Teszt {
     public void shouldReplyCorrectly4(String names4) {
         assertEquals(reply4, new Koszonto().Reply(new String[] {names4}));
     }
-
 //3 basic, 2 Shout
-    String[] names5 = new String[] {"JAY","Maya","Alice","BOB","Charlotte"};
-    String reply5 = new String("Hello, Maya, Alice, and Charlotte. AND HELLO JAY AND BOB!");
-
     public void shouldReplyCorrectly5(String names5) {
         assertEquals(reply5, new Koszonto().Reply(new String[] {names5}));
     }
-
-    }
+}
