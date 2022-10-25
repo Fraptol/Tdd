@@ -30,9 +30,11 @@ public class Koszonto {
                 }
             }                                                       //did it have to be this hard,
 
-            //                              ~~thoughts of the writer~~
             // also now its in Arraylist,
             // so i need to google again, but thank god its not me writing functional code tho.
+
+
+            //                              ~~thoughts of the writer~~
 
             // im doing this first because i didn't want to rewrite it later,
             // so i just made it with relatively fresh memory of how the reworked part works.
