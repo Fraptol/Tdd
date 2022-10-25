@@ -7,6 +7,8 @@ import java.util.Arrays;
 
 //0.3
 public class Koszonto {
+    public static void main(String[] args)
+    {}
     public String Reply(String[] names) {
         int length= names.length;
         if (length == 0) {
@@ -60,6 +62,9 @@ public class Koszonto {
                     text = text + ", and " + namesSplit.get(i);
                 }
             }
+
+
+            //out
             System.out.println("Hello, " + text + ".");
             return "Hello, " + names + ".";
         }
