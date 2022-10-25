@@ -12,50 +12,39 @@ public class Koszonto {
     public String Reply(String[] names) {
         int length= names.length;
         if (length == 0) {
-            System.out.println("Hello, my friend.");
+//no input case
             return "Hello, my friend.";
 
-
-
         } else {
+//splitting the input
             String text="";
             String TEXT="";
             ArrayList<String> namesSplit = new ArrayList<String>();
             ArrayList<String> NAMESSplit = new ArrayList<String>();
             //String[] namesSplit=new String[]{names.split(", ")};  //java amirite
             for (int i = 0; i < names.length; i++) {
-                String[] lil=names[i].split(", ");
+                String[] lilBites=names[i].split(", ");
 
                 //namesSplit.add(names[i].split(", "));             //java amirite
-                for(int j =0; j< lil.length; j++) {
+                for(int j =0; j< lilBites.length; j++) {
 
                     boolean Uppercase=false;
-
-                    Uppercase=lil[j].matches(lil[j].toUpperCase());
+//Checking uppercase
+                    Uppercase=lilBites[j].matches(lilBites[j].toUpperCase());
                     if(Uppercase)
-                    {NAMESSplit.add(lil[j]);}
+                    {NAMESSplit.add(lilBites[j]);}
                     else
-                    {namesSplit.add(lil[j]);}
+                    {namesSplit.add(lilBites[j]);}
                 }
             }                                                       //did it have to be this hard,
 
-            // also now its in Arraylist,
-            // so i need to google again, but thank god its not me writing functional code tho.
 
+            //                              ~~ nonsense thoughts of the writer ~~
+                                                       //please ignore
 
-            //                              ~~thoughts of the writer~~
-
-            // im doing this first because i didn't want to rewrite it later,
-            // so i just made it with relatively fresh memory of how the reworked part works.
-            // i feel like a lazy * a bit, not following order of duty when that's the actual point, but...
-            // for one, got into the flow of it, but also
-            // i just want it done and this seemed best to understand (for me) in bulk. if not else im rewriting it
-            // with more ordered writing timings next year :(
-            // or this week if it means anything.
-            // btw im basically relearning java, i haven't programmed in a while, (and i thought i remember)
             // ... you know how sitting hours in front of a vibrating lamp is not really good for one's psiche,
-            // well, i really have wanted to give up on programming, BUT for now im using it outside of this anyway,
-            // so i could say, it doesn't seem that bad... well it is, it is bad,
+            // well, i really have wanted to give up on programming, BUT for NOW i'm using it outside of this anyway,
+            // so i could say, it doesn't seem that bad, destructive... well it is, it is bad,
             // and i SHOULD limit my recreational hours in front of the screen,
             // because it gets me falling apart when working on these machines.
 
@@ -64,7 +53,7 @@ public class Koszonto {
 
 
 
-
+//concat
             length = namesSplit.size();
             String[] split = new String[length];
             for (int i = 0; i < namesSplit.size(); i++) {//how the hell is this always false
@@ -76,17 +65,24 @@ public class Koszonto {
             }
             length = NAMESSplit.size();
             String[] SPLIT = new String[length];
-            for (int i = 0; i < NAMESSplit.size(); i++) {//how the hell is this always false
-                if (!(i<NAMESSplit.size()-1)) {
+            for (int i = 0; i < NAMESSplit.size(); i++) {//how the hell is this always false too
+                if (!(i < NAMESSplit.size() - 1)) {
                     TEXT = TEXT + ", " + NAMESSplit.get(i);
                 } else {
                     TEXT = TEXT + ", AND " + NAMESSplit.get(i);
                 }
             }
-
-            //out
-            System.out.println("Hello, " + text + ".");
-            return "Hello, " + text + ".";
+//wording
+            String reply = new String("");
+            if (split.length>0) {
+                reply = "Hello, " + text + ".";
+                if (SPLIT.length > 0) {
+                    reply = reply + " AND ";
+                }
+            }
+            if (SPLIT.length>0){reply=reply+ "HELLO "+TEXT+"!";}
+//out
+            return reply;
         }
     }
 }
